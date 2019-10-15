@@ -15,7 +15,7 @@ export class TagService {
   }
 
   newTag(tag: Tag) {
-    return this.http.post<void>(this.url, status);
+    return this.http.post<void>(this.url, tag);
   }
 
   deleteTag(tagId: number) {
