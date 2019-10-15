@@ -7,7 +7,7 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
 import {CompanyComponent} from './company/company.component';
-import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatTableModule} from '@angular/material';
+import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatTableModule} from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
 import {ComanyNewDialogComponent} from './comany-new-dialog/comany-new-dialog.component';
 import {FormsModule} from '@angular/forms';
@@ -27,6 +27,9 @@ import { ImportanceLevelInfoDialogComponent } from './importance-level-info-dial
 import { UserComponent } from './user/user.component';
 import { UserInfoDialogComponent } from './user-info-dialog/user-info-dialog.component';
 import { UserNewDialogComponent } from './user-new-dialog/user-new-dialog.component';
+import { SubdivisionComponent } from './subdivision/subdivision.component';
+import { SubdivisionNewDialogComponent } from './subdivision-new-dialog/subdivision-new-dialog.component';
+import { SubdivisionInfoDialogComponent } from './subdivision-info-dialog/subdivision-info-dialog.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import { UserNewDialogComponent } from './user-new-dialog/user-new-dialog.compon
     ImportanceLevelInfoDialogComponent,
     UserComponent,
     UserInfoDialogComponent,
-    UserNewDialogComponent
+    UserNewDialogComponent,
+    SubdivisionComponent,
+    SubdivisionNewDialogComponent,
+    SubdivisionInfoDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +68,8 @@ import { UserNewDialogComponent } from './user-new-dialog/user-new-dialog.compon
     MatDialogModule,
     MatFormFieldModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
   entryComponents: [
     ComanyNewDialogComponent,
@@ -76,7 +83,9 @@ import { UserNewDialogComponent } from './user-new-dialog/user-new-dialog.compon
     ImportanceLevelNewDialogComponent,
     ImportanceLevelInfoDialogComponent,
     UserInfoDialogComponent,
-    UserNewDialogComponent
+    UserNewDialogComponent,
+    SubdivisionNewDialogComponent,
+    SubdivisionInfoDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

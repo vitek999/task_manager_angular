@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Subdivision company form</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput placeholder="Subdivision name" required="true" [(ngModel)]="item.name">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="Subdivision description" required="true" [(ngModel)]="item.description">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Company</mat-label>
+    <mat-select [(value)]="item.companyId">
+      <mat-option *ngFor="let company of companies" [value]="company.id">
+        {{company.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">No Thanks</button>
+  <button mat-button cdkFocusInitial (click)="create()">Add</button>
+</div>
