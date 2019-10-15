@@ -12,13 +12,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { ComanyNewDialogComponent } from './comany-new-dialog/comany-new-dialog.component';
 import {FormsModule} from '@angular/forms';
 import { CompanyInfoDialogComponent } from './company-info-dialog/company-info-dialog.component';
+import { RoleComponent } from './role/role.component';
+import { RoleNewDialogComponent } from './role-new-dialog/role-new-dialog.component';
+import { RoleInfoDialogComponent } from './role-info-dialog/role-info-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompanyComponent,
     ComanyNewDialogComponent,
-    CompanyInfoDialogComponent
+    CompanyInfoDialogComponent,
+    RoleComponent,
+    RoleNewDialogComponent,
+    RoleInfoDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,9 @@ import { CompanyInfoDialogComponent } from './company-info-dialog/company-info-d
   ],
   entryComponents: [
     ComanyNewDialogComponent,
-    CompanyInfoDialogComponent
+    CompanyInfoDialogComponent,
+    RoleNewDialogComponent,
+    RoleInfoDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

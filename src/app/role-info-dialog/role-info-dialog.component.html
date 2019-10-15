@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Role info form</h1>
+<div mat-dialog-content>
+  <p *ngIf="isUsedError" style="color: red">{{errorMessage}}</p>
+  <mat-form-field>
+    <input matInput placeholder="Role name" required="true" [(ngModel)]="item.name">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">No Thanks</button>
+  <button mat-button (click)="delete()">Delete</button>
+  <button mat-button cdkFocusInitial (click)="update()">Save</button>
+</div>
