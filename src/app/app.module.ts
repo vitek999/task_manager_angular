@@ -6,18 +6,21 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
-import { CompanyComponent } from './company/company.component';
+import {CompanyComponent} from './company/company.component';
 import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatTableModule} from '@angular/material';
-import { HttpClientModule } from '@angular/common/http';
-import { ComanyNewDialogComponent } from './comany-new-dialog/comany-new-dialog.component';
+import {HttpClientModule} from '@angular/common/http';
+import {ComanyNewDialogComponent} from './comany-new-dialog/comany-new-dialog.component';
 import {FormsModule} from '@angular/forms';
-import { CompanyInfoDialogComponent } from './company-info-dialog/company-info-dialog.component';
-import { RoleComponent } from './role/role.component';
-import { RoleNewDialogComponent } from './role-new-dialog/role-new-dialog.component';
-import { RoleInfoDialogComponent } from './role-info-dialog/role-info-dialog.component';
-import { TagComponent } from './tag/tag.component';
-import { TagNewDialogComponent } from './tag-new-dialog/tag-new-dialog.component';
-import { TagInfoDialogComponent } from './tag-info-dialog/tag-info-dialog.component';
+import {CompanyInfoDialogComponent} from './company-info-dialog/company-info-dialog.component';
+import {RoleComponent} from './role/role.component';
+import {RoleNewDialogComponent} from './role-new-dialog/role-new-dialog.component';
+import {RoleInfoDialogComponent} from './role-info-dialog/role-info-dialog.component';
+import {TagComponent} from './tag/tag.component';
+import {TagNewDialogComponent} from './tag-new-dialog/tag-new-dialog.component';
+import {TagInfoDialogComponent} from './tag-info-dialog/tag-info-dialog.component';
+import {StatusComponent} from './status/status.component';
+import {StatusNewDialogComponent} from './status-new-dialog/status-new-dialog.component';
+import {StatusInfoDialogComponent} from './status-info-dialog/status-info-dialog.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { TagInfoDialogComponent } from './tag-info-dialog/tag-info-dialog.compon
     RoleInfoDialogComponent,
     TagComponent,
     TagNewDialogComponent,
-    TagInfoDialogComponent
+    TagInfoDialogComponent,
+    StatusComponent,
+    StatusNewDialogComponent,
+    StatusInfoDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +58,9 @@ import { TagInfoDialogComponent } from './tag-info-dialog/tag-info-dialog.compon
     RoleNewDialogComponent,
     RoleInfoDialogComponent,
     TagNewDialogComponent,
-    TagInfoDialogComponent
+    TagInfoDialogComponent,
+    StatusNewDialogComponent,
+    StatusInfoDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
