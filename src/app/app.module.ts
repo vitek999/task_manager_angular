@@ -15,6 +15,9 @@ import { CompanyInfoDialogComponent } from './company-info-dialog/company-info-d
 import { RoleComponent } from './role/role.component';
 import { RoleNewDialogComponent } from './role-new-dialog/role-new-dialog.component';
 import { RoleInfoDialogComponent } from './role-info-dialog/role-info-dialog.component';
+import { TagComponent } from './tag/tag.component';
+import { TagNewDialogComponent } from './tag-new-dialog/tag-new-dialog.component';
+import { TagInfoDialogComponent } from './tag-info-dialog/tag-info-dialog.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { RoleInfoDialogComponent } from './role-info-dialog/role-info-dialog.com
     CompanyInfoDialogComponent,
     RoleComponent,
     RoleNewDialogComponent,
-    RoleInfoDialogComponent
+    RoleInfoDialogComponent,
+    TagComponent,
+    TagNewDialogComponent,
+    TagInfoDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +50,9 @@ import { RoleInfoDialogComponent } from './role-info-dialog/role-info-dialog.com
     ComanyNewDialogComponent,
     CompanyInfoDialogComponent,
     RoleNewDialogComponent,
-    RoleInfoDialogComponent
+    RoleInfoDialogComponent,
+    TagNewDialogComponent,
+    TagInfoDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
