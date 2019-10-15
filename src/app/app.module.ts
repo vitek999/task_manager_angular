@@ -24,6 +24,9 @@ import {StatusInfoDialogComponent} from './status-info-dialog/status-info-dialog
 import { ImportanceLevelComponent } from './importance-level/importance-level.component';
 import { ImportanceLevelNewDialogComponent } from './importance-level-new-dialog/importance-level-new-dialog.component';
 import { ImportanceLevelInfoDialogComponent } from './importance-level-info-dialog/importance-level-info-dialog.component';
+import { UserComponent } from './user/user.component';
+import { UserInfoDialogComponent } from './user-info-dialog/user-info-dialog.component';
+import { UserNewDialogComponent } from './user-new-dialog/user-new-dialog.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { ImportanceLevelInfoDialogComponent } from './importance-level-info-dial
     StatusInfoDialogComponent,
     ImportanceLevelComponent,
     ImportanceLevelNewDialogComponent,
-    ImportanceLevelInfoDialogComponent
+    ImportanceLevelInfoDialogComponent,
+    UserComponent,
+    UserInfoDialogComponent,
+    UserNewDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +74,9 @@ import { ImportanceLevelInfoDialogComponent } from './importance-level-info-dial
     StatusNewDialogComponent,
     StatusInfoDialogComponent,
     ImportanceLevelNewDialogComponent,
-    ImportanceLevelInfoDialogComponent
+    ImportanceLevelInfoDialogComponent,
+    UserInfoDialogComponent,
+    UserNewDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
