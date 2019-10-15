@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Subdivision company form</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Role</mat-label>
+    <mat-select [(value)]="item.roleId">
+      <mat-option *ngFor="let role of roles" [value]="role.id">
+        {{role.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Subdivision</mat-label>
+    <mat-select [(value)]="item.subdivisionId">
+      <mat-option *ngFor="let subdivision of subdivisions" [value]="subdivision.id">
+        {{subdivision.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>User</mat-label>
+    <mat-select [(value)]="item.userId">
+      <mat-option *ngFor="let user of users" [value]="user.id">
+        {{user.lastName + ' ' + user.firstName}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">No Thanks</button>
+  <button mat-button cdkFocusInitial (click)="create()">Add</button>
+</div>

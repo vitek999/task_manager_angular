@@ -30,6 +30,9 @@ import { UserNewDialogComponent } from './user-new-dialog/user-new-dialog.compon
 import { SubdivisionComponent } from './subdivision/subdivision.component';
 import { SubdivisionNewDialogComponent } from './subdivision-new-dialog/subdivision-new-dialog.component';
 import { SubdivisionInfoDialogComponent } from './subdivision-info-dialog/subdivision-info-dialog.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeNewDialogComponent } from './employee-new-dialog/employee-new-dialog.component';
+import { EmployeeInfoDialogComponent } from './employee-info-dialog/employee-info-dialog.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,10 @@ import { SubdivisionInfoDialogComponent } from './subdivision-info-dialog/subdiv
     UserNewDialogComponent,
     SubdivisionComponent,
     SubdivisionNewDialogComponent,
-    SubdivisionInfoDialogComponent
+    SubdivisionInfoDialogComponent,
+    EmployeeComponent,
+    EmployeeNewDialogComponent,
+    EmployeeInfoDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -85,7 +91,9 @@ import { SubdivisionInfoDialogComponent } from './subdivision-info-dialog/subdiv
     UserInfoDialogComponent,
     UserNewDialogComponent,
     SubdivisionNewDialogComponent,
-    SubdivisionInfoDialogComponent
+    SubdivisionInfoDialogComponent,
+    EmployeeNewDialogComponent,
+    EmployeeInfoDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
