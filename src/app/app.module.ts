@@ -33,6 +33,9 @@ import { SubdivisionInfoDialogComponent } from './subdivision-info-dialog/subdiv
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeNewDialogComponent } from './employee-new-dialog/employee-new-dialog.component';
 import { EmployeeInfoDialogComponent } from './employee-info-dialog/employee-info-dialog.component';
+import { TaskComponent } from './task/task.component';
+import { TaskInfoDialogComponent } from './task-info-dialog/task-info-dialog.component';
+import { TaskNewDialogComponent } from './task-new-dialog/task-new-dialog.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +63,10 @@ import { EmployeeInfoDialogComponent } from './employee-info-dialog/employee-inf
     SubdivisionInfoDialogComponent,
     EmployeeComponent,
     EmployeeNewDialogComponent,
-    EmployeeInfoDialogComponent
+    EmployeeInfoDialogComponent,
+    TaskComponent,
+    TaskInfoDialogComponent,
+    TaskNewDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -93,7 +99,9 @@ import { EmployeeInfoDialogComponent } from './employee-info-dialog/employee-inf
     SubdivisionNewDialogComponent,
     SubdivisionInfoDialogComponent,
     EmployeeNewDialogComponent,
-    EmployeeInfoDialogComponent
+    EmployeeInfoDialogComponent,
+    TaskInfoDialogComponent,
+    TaskNewDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
