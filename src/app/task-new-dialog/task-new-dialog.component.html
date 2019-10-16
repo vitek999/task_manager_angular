@@ -1,0 +1,49 @@
+<h1 mat-dialog-title>Subdivision company form</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput placeholder="Task name" required="true" [(ngModel)]="item.name">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="Task description" required="true" [(ngModel)]="item.description">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Employee Id</mat-label>
+    <mat-select [(value)]="item.employeeId">
+      <mat-option *ngFor="let employee of employes" [value]="employee.id">
+        {{employee.id}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Importance Level Id</mat-label>
+    <mat-select [(value)]="item.importanceLevelId">
+      <mat-option *ngFor="let importanceLevel of importanceLevels" [value]="importanceLevel.id">
+        {{importanceLevel.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-label>Status Id</mat-label>
+    <mat-select [(value)]="item.statusId">
+      <mat-option *ngFor="let status of statuses" [value]="status.id">
+        {{status.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="Start date" required="true" [(ngModel)]="item.startDate">
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <input matInput placeholder="End date" required="true" [(ngModel)]="item.endDate">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">No Thanks</button>
+  <button mat-button cdkFocusInitial (click)="create()">Add</button>
+</div>
